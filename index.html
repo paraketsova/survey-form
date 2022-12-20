@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 80" width="214" height="80" class="position-absolute w-100 h-auto" role="img" id="logo"><path d="M.735.345v23.789a13.74 13.74 0 0 0 20.61 11.9l34.39-19.83V.344l-41.26 23.79V.344zm78.78 15.85v47.58h9V48.963l6.66-7.21 14.271 22.02h11.149l-19.24-28.68 17.47-18.9h-11.209l-19.101 20.74v-20.74zm118.941 12.78c-8.91 0-14.68 5.3-15.09 12.1h7.469c.14-3.06 2.79-5.84 7.21-5.84s7 2.38 7 5.71a2.2 2.2 0 0 1-2.509 2.31h-6.33c-7.68 0-12.84 4.14-12.84 10.81 0 5.91 4.62 10.26 11.42 10.26 4.89 0 8.83-2.24 10.26-5.64v5.07h8.219v-22c0-7.75-6.109-12.78-14.809-12.78zm-35.38.02c-11.21 0-16.78 8.57-16.78 17.54 0 8.97 6.249 17.81 17.459 17.81 8.43 0 14.821-4.73 16.111-12h-8.111c-.93 3.23-3.71 5-8 5-5.3 0-8.83-3.49-9.44-9h25.28a28.43 28.43 0 0 0 .14-2.85c0-8.15-5.17-16.52-16.66-16.5zm-39.21.53v34.25h8.36v-16.17c0-6.53 2.11-11.08 7.41-11.08h5.36v-7h-4c-4.42 0-7.07 1.65-8.77 6v-6zm39.99 5.703a7.85 7.85 0 0 1 7.52 7.617h-16.861c.88-5.17 3.87-7.61 8.56-7.61a7.85 7.85 0 0 1 .781-.007zM14.8 42.128A13.74 13.74 0 0 0 .735 55.864v23.791h13.74v-23.79l41.26 23.79V63.794l-34.39-19.83a13.74 13.74 0 0 0-6.545-1.836zm182.566 6.666h7.68v.55c0 5.12-3.061 8.79-8.291 8.87-3.13 0-5.299-1.76-5.299-4.42 0-3 2.37-5 5.91-5z" data-name="Lager 1"></path></svg>
+  </div>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <form id="survey-form" method="post" action='https://register-demo.krea.org'>
+    <fieldset>
+      <label id="name-label" for="name">Name: <input id="name" name="name" type="text" required placeholder=" Enter your name"/></label>
+      <label id="company-name-label" for="name">Company: <input id="name" name="name" type="text" required placeholder=" Enter company name or organisation number"/></label>
+      <label id="email-label" for="email">Email: <input id="email" name="email" type="email" required placeholder=" Enter your email"/></label>
+      <label id="number-label" for="number">Age: <input id="number" name="number" type="number" min="16" max="110" required placeholder=" Enter your age"/></label>
+      <label id="role-label" for="role">Your role: <input id="role" name="role" type="text" required placeholder=" Which option best describes your current role?"/></label>
+    </fieldset>
+
+    <fieldset>
+      <label for="personal-account"><input id="personal-account" type="radio" name="account-type" value="personal-account" class="inline" /> Personal Account</label>
+      <label for="business-account"><input id="business-account" type="radio" name="account-type" value="business-account" class="inline" /> Business Account</label>
+    </fieldset>
+
+    <fieldset>
+      <label for="dropdown">Which industrial solution are you interested in ?
+        <select id="dropdown" name="dropdown">
+          <option value="0">(select one)</option>
+          <option value="1">Construction</option>
+          <option value="2">Restaurants</option>
+          <option value="3">Retail</option>
+          <option value="4">Transportation</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <p>Purposes of loan</p>
+      <label for="purp-loan-1">
+        <input id="purp-loan-1" type="checkbox" name="purp-loan-1" value="new-business-costs" class="inline" /> Finance of new business costs
+      </label>
+      <label for="purp-loan-2">
+        <input id="purp-loan-2" type="checkbox" name="purp-loan-2" value="company-running-costs" class="inline" /> Financing company running costs
+      </label>
+      <label for="purp-loan-3">
+        <input id="purp-loan-3" type="checkbox" name="purp-loan-3" value="financing-expansion" class="inline" /> Financing expansion
+      </label>
+      <label for="purp-loan-4">
+        <input id="purp-loan-4" type="checkbox" name="purp-loan-4" value="machine-financing" class="inline" /> Machine financing
+      </label>
+      <label for="purp-loan-5">
+        <input id="purp-loan-5" type="checkbox" name="purp-loan-5" value="project-financing" class="inline" /> Project financing
+      </label>
+      <label for="purp-loan-6">
+        <input id="purp-loan-6 " type="checkbox" name="purp-loan-6" value="purchase-other-business" class="inline" /> Purchase of other business
+      </label>
+      <label for="purp-loan-7">
+        <input id="purp-loan-7" type="checkbox" name="purp-loan-7" value="purchase-stock-supply" class="inline" /> Purchase of stock/supply
+      </label>
+      <label for="purp-loan-8">
+        <input id="purp-loan-8" type="checkbox" name="purp-loan-8" value="project-restoration-vehicle" class="inline" /> Project or restoration of vehicle
+      </label>
+      <label for="purp-loan-9">
+        <input id="purp-loan-9" type="checkbox" name="purp-loan-9" value="renovation-property" class="inline" /> Renovation of property
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="comments">Any comments or suggestions?
+        <textarea id="comments" name="comments" rows="3" cols="30" placeholder=" Enter your comments here..."></textarea>
+      </label>
+      <label for="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="accept-terms" class="inline" /> I accept the <a href="https://krea.se/en/terms-and-conditions/">terms and conditions</a>
+      </label>
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+  </body>
+</html>
